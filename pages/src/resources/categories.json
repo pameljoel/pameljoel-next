@@ -1,0 +1,63 @@
+[
+  {
+    "name": "Front-end Development",
+    "image": "images/home/code.png",
+    "description": "Hand written and standard compilant code to adapt your project to any device.",
+    "tags": [
+      "Visual Studio code",
+      "Webpack",
+      "Git",
+      "Svn",
+      "Preact",
+      "PWA",
+      "Sublime Text",
+      "scss",
+      "less",
+      "Compass",
+      "Grunt",
+      "Bower",
+      "CSS Animations",
+      "CSS Transitions",
+      "CSS Transforms",
+      "Wordpress",
+      "Canvas"
+    ],
+    "skills": ["React","HTML 5","CSS 3","SCSS","JavaScript","AngularJS"]
+  },{
+    "name": "Design",
+    "image": "images/home/interface.png",
+    "description": "Creative and unique designs to give your website a twist.",
+    "tags": [
+      "Web Design",
+      "Print Design",
+      "Responsive Design",
+      "Adaptive Design",
+      "Personalizing templates",
+      "Logo Design",
+      "Infographics",
+      "Content creation",
+      "Social Media Marketing",
+      "skewmorphism"
+    ],
+    "skills": ["UI", "Sketch","Photoshop","Illustrator","Icon Design","InDesign", "Flat Design","After Effects"]
+  }, {
+    "name": "User Experience",
+    "image": "images/home/wireframe.png",
+    "description": "Clean, crisp, readable, easy to navigate interfaces with user driven design.",
+    "tags": [
+      "Pen & Paper",
+      "Vision Boards",
+      "Brainstorming",
+      "Design Management",
+      "Beta testing",
+      "Design Thinking",
+      "Storyboard",
+      "User Portrait",
+      "Lead-User Analysis",
+      "MoodBoards",
+      "Customer Journey",
+      "Workshop"
+    ],
+    "skills": ["Mockups","Prototyping", "UX"]
+  }
+]

@@ -1,0 +1,10 @@
+@import "../../variables";
+
+.tags {
+  @media(max-width: $phone-max) {
+    display: flex;
+    flex-wrap: wrap;
+  }
+}
+
+

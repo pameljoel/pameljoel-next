@@ -1,0 +1,38 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto+Slab:700|Source+Sans+Pro:300,400,700&display=swap');
+
+@import 'variables';
+
+body {
+  background-color: $background-color-primary;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+*,
+*:after,
+*:before {
+  box-sizing: border-box;
+}
+
+.container {
+  max-width: 980px;
+  margin: auto;
+}
+
+a {
+  color: $link-color-primary;
+  text-decoration: none;
+  user-select: none;
+  cursor: pointer;
+
+  &:hover,
+  &:focus,
+  &:active {
+    color: $link-color-hover;
+  }
+
+  &:visited {
+    color: $link-color-hover;
+  }
+}

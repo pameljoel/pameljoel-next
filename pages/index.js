@@ -1,13 +1,15 @@
 import Head from 'next/head'
+import Home from './src/components/home/home.tsx';
 import styles from '../styles/Home.module.css'
 
-export default function Home() {
+export default function Aaaa() {
   return (
     <div className={styles.container}>
       <Head>
-        <title>Create Next App</title>
+        <title>Pamel Joel Beltrè - Front End Designer - React, AngularJS, JavaScript, CSS3, HTML5 projects</title>
         <link rel="icon" href="/favicon.ico" />
       </Head>
+
 
       <main className={styles.main}>
         <h1 className={styles.title}>

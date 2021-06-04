@@ -1,0 +1,17 @@
+.error-panel {
+  padding: 100px 0;
+  text-align: center;
+
+  .error-code {
+    font-size: 120px;
+    line-height: 1;
+  }
+
+  .error-message {
+    margin-bottom: 20px;
+  }
+
+  .big-button-primary {
+    padding: 10px 20px;
+  }
+}

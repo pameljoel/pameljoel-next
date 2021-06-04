@@ -1,0 +1,45 @@
+@import '../variables';
+@import '../mixins';
+
+.card {
+  @include box-shadow();
+  border: 1px solid $border-color-primary;
+  padding: 60px;
+  margin-bottom: 40px;
+  background-color: white;
+  border-radius: 5px;
+  transition: all 0.4s ease-in-out;
+  position: relative;
+  z-index: 2;
+
+  @media (max-width: $desktop-max) {
+    padding: 60px;
+    padding-bottom: 20px;
+  }
+
+  @media (max-width: $tablet-max) {
+    padding: 40px;
+    padding-bottom: 20px;
+  }
+
+  @media (max-width: $phone-max) {
+    padding: 20px;
+  }
+}
+
+.card .title {
+  @include title;
+
+  margin-top: 0;
+
+  @media (max-width: $phone-max) {
+    font-size: 24px;
+    font-weight: bold;
+    margin-top: 10px;
+  }
+}
+
+.card .description {
+  @include base-text;
+  margin-bottom: 40px;
+}

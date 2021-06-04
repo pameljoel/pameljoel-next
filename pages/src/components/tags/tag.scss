@@ -1,0 +1,84 @@
+@import "../../variables";
+
+.tag {
+  font-size: 12px;
+  display: inline-block;
+  border: 1px solid $border-color-primary;
+  border-radius: 10px;
+  padding: 6px 10px;
+  margin-right: 10px;
+  margin-bottom: 10px;
+  transition: background-color 0.3s ease-in-out, color 0.2s ease-in;
+  cursor: pointer;
+  text-transform: uppercase;
+  color: $text-color-primary;
+  font-weight: 400;
+  letter-spacing: 2px;
+  user-select: none;
+  box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.1);
+  background-color: white;
+
+  @media (max-width: $phone-max) {
+    display: flex;
+    font-size: 10px;
+    line-height: 1;
+    flex-grow: 1;
+    justify-content: space-between;
+    padding: 10px 6px;
+  }
+
+  &__name {
+    line-height: 20px;
+    @media (max-width: $phone-max) {
+      margin: auto;
+    }
+  }
+
+  &__tooltip {
+  }
+
+  &:hover {
+    .tag-label {
+      &.new {
+        color: black;
+        background-color: white;
+      }
+      &.top {
+        color: black;
+        background-color: white;
+      }
+    }
+  }
+}
+
+.tag:hover {
+  background-color: $brand-color-light;
+  color: $text-color-white;
+}
+
+.tag-label {
+  margin-left: 10px;
+  display: block;
+  padding: 2px 5px;
+  border-radius: 5px;
+  letter-spacing: 0;
+  font-weight: 900;
+
+  @media (max-width: $phone-max) {
+    margin-left: 2px;
+  }
+}
+
+.tag-label.new {
+  background-color: #d2fabb;
+  display: inline-block;
+  font-size: 10px;
+  padding: 5px 10px;
+}
+
+.tag-label.top {
+  background-color: #ddd;
+  display: inline-block;
+  font-size: 10px;
+  padding: 5px 10px;
+}

@@ -1,0 +1,25 @@
+@import "../../variables";
+
+.curriculum-container {
+    padding: 20px;
+
+    @media(max-width: $phone-min){
+      padding: 10px;
+    }
+
+    /* common */
+    .prefix {
+        padding-right: 5px;
+        display: inline-block;
+    }
+
+    .text {
+        color: $brand-color-light;
+        display: inline-block;
+        border-bottom: 1px dashed #eee;
+    }
+
+    a {
+        border-bottom: 1px dotted $link-color-primary;
+    }
+}
