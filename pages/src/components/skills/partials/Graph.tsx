@@ -1,9 +1,9 @@
 import React from 'react';
-import PieChart from 'react-minimal-pie-chart';
-import { randomDelay, skillLevel } from '../utils.ts';
+import { PieChart } from 'react-minimal-pie-chart';
+import { randomDelay, skillLevel } from '../utils';
 import isBreakpoint from '../../utils/isBreakpoint';
 import { breakpoints } from '../../utils/breakpoints';
-import { ProgressBar } from './ProgressBar.tsx';
+import { ProgressBar } from './ProgressBar';
 
 type GraphProps = { percentage: number; chartData: any[] };
 type Props = { percentage: number; color?: string };

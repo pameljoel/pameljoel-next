@@ -38,11 +38,11 @@ const StaticContent = () => {
                 <div className="presentation-tooltip">
                   <div className="image" />
                   <div className="description">
-                    <Link className="name" href="/curriculum">
-                      Pamel Joel Beltrè
+                    <Link href="/curriculum">
+                      <a className="name">Pamel Joel Beltrè</a>
                     </Link>
-                    <Link className="text" href="/curriculum">
-                      I am a young web developer, you can find me here:
+                    <Link  href="/curriculum">
+                      <a className="text">I am a young web developer, you can find me here:</a>
                     </Link>
                     <div className="social">
                       <a
@@ -132,13 +132,15 @@ const StaticContent = () => {
 
               <div className="company-description">
                 <div className="company-suffix">as</div>
-                <Link className="company-job-title" href="/curriculum">
+                <Link href="/curriculum">
+                  <a className="company-job-title">
                   <span>Front-end Engineer</span>
                   <div>
                     <small style={{ fontSize: '12px', fontWeight: '300' }}>
                       View my Curriculum Vitae
                     </small>
                   </div>
+                  </a>
                 </Link>
               </div>
             </div>
@@ -146,7 +148,9 @@ const StaticContent = () => {
 
           <Fade big cascade>
             <button className="big-button-secondary">
-              <Link href="/projects">See my projects</Link>
+              <Link href="/projects">
+                <a>See my projects</a>
+              </Link>
             </button>
           </Fade>
 

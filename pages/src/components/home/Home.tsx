@@ -5,9 +5,7 @@ import StaticContent from './StaticContent';
 import categoriesJson from '../../resources/categories.json';
 import { getData } from '../../helpers';
 import { SectionsType } from '../../types';
-import Section from './Section.tsx';
-//import './../card.scss';
-//import './home.scss';
+import Section from './Section';
 
 const createSections = (sections: SectionsType) => {
   if (!sections) return null;
