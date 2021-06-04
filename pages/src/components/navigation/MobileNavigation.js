@@ -1,11 +1,9 @@
-import React, { Fragment, useState } from 'react';
-import Link from 'gatsby-link';
+import React, {Fragment, useState} from 'react';
+import Link from 'next/link'
 
-import { openCrisp } from '../crisp/Crisp';
+import {openCrisp} from '../crisp/Crisp';
 import Branding from './Branding';
 import Hamburger from './Hamburger';
-
-import './mobileNavigation.scss';
 
 const MobileNavigation = () => {
   const [menuOpen, setMenuOpen] = useState(false);
@@ -18,9 +16,11 @@ const MobileNavigation = () => {
     const { text, to } = props;
     return (
       <li onClick={toggleMenu}>
-        <Link to={to} activeClassName="active">
-          <div className="nav-link">{text}</div>
-          <div className="active-bar" />
+        <Link href={to} activeClassName="active">
+            <a>
+                <div className="nav-link">{text}</div>
+                <div className="active-bar" />
+            </a>
         </Link>
       </li>
     );

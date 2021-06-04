@@ -5,7 +5,6 @@ import isBreakpoint from '../utils/isBreakpoint';
 import MobileNavigation from './MobileNavigation';
 import DesktopNavigation from './DesktopNavigation';
 
-import './navigation.scss';
 
 const Navigation = () => {
   useEffect(() => {

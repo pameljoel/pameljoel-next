@@ -1,6 +1,5 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import './hamburger.scss';
 
 const Hamburger = ({ open, callback }) => {
   return (

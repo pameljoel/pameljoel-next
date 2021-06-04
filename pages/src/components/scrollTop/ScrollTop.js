@@ -3,7 +3,6 @@ import React, { useEffect, useState } from 'react';
 import { animateScroll } from 'react-scroll';
 
 import ArrowUp from './arrow-up.svg';
-import './scrollTop.scss';
 
 const ScrollTop = () => {
   const [isTop, setIsTop] = useState(true);

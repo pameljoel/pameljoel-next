@@ -30,9 +30,20 @@ import './src/components/skills/partials/additionalInfo.scss'
 import './src/components/home/home.scss'
 import './src/components/scrollTop/scrollTop.scss'
 import './src/components/utils/FadeIn.scss'
+import './src/components/navigation/navigation.scss';
+import './src/components/navigation/hamburger.scss';
+import './src/components/navigation/mobileNavigation.scss';
+import './src/components/navigation/desktopNavigation.scss';
+
+import Navigation from "./src/components/navigation/Navigation";
+import ScrollTop from "./src/components/scrollTop/ScrollTop";
 
 function MyApp({ Component, pageProps }) {
-  return <Component {...pageProps} />
+  return <>
+    <Navigation />
+    <ScrollTop />
+    <Component {...pageProps} />
+    </>
 }
 
 export default MyApp

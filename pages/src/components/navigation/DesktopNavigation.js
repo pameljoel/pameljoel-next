@@ -1,10 +1,8 @@
 import React from 'react';
-import Link from 'gatsby-link';
+import Link from 'next/link'
 
 import Branding from './Branding';
 import { openCrisp } from '../crisp/Crisp';
-
-import './desktopNavigation.scss';
 
 const DesktopNavigation = () => {
   return (
@@ -16,27 +14,36 @@ const DesktopNavigation = () => {
       </ul>
       <ul className="main-navigation-links">
         <li>
-          <Link to="/" activeClassName="active">
-            <div className="nav-link">Home</div>
-            <div className="active-bar" />
+          <Link href="/" activeClassName="active">
+            <a>
+              <div className="nav-link">Home</div>
+              <div className="active-bar" />
+            </a>
           </Link>
         </li>
         <li>
-          <Link to="/daily" activeClassName="active">
+          <Link href="/daily" activeClassName="active">
+            <a>
+
             <div className="nav-link">Daily</div>
             <div className="active-bar" />
+            </a>
           </Link>
         </li>
         <li>
-          <Link to="/curriculum" activeClassName="active">
+          <Link href="/curriculum" activeClassName="active">
+            <a>
             <div className="nav-link">CV</div>
             <div className="active-bar" />
+            </a>
           </Link>
         </li>
         <li>
-          <Link to="/projects" activeClassName="active">
+          <Link href="/projects" activeClassName="active">
+            <a>
             <div className="nav-link">Projects</div>
             <div className="active-bar" />
+            </a>
           </Link>
         </li>
         <li>
