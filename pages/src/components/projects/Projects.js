@@ -7,10 +7,7 @@ import { enableCrisp } from '../crisp/Crisp';
 import Project from './Project';
 
 import { getDataAsync } from '../../helpers';
-import projectJson from '../../../static/resources/projects.json';
-
-import './projects.scss';
-import '../carousel/slick.scss';
+import projectJson from '../../../../static/resources/projects.json';
 
 const Projects = (props) => {
   const { selectedProject } = props;

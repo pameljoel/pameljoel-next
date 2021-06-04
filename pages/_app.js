@@ -39,6 +39,9 @@ import 'react-image-lightbox/style.css';
 import './src/components/daily/daily.scss';
 import './src/components/daily/modal.scss';
 
+import './src/components/projects/projects.scss';
+import './src/components/carousel/slick.scss';
+
 import Navigation from "./src/components/navigation/Navigation";
 import ScrollTop from "./src/components/scrollTop/ScrollTop";
 
