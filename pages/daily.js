@@ -1,10 +1,6 @@
 import React, { Fragment } from 'react';
-import SEO from '../components/seo';
-import Daily from '../components/daily/Daily';
-
-import '../index.scss';
-import '../App.scss';
-import '../bigheader.scss';
+import SEO from './src/components/seo';
+import Daily from './src/components/daily/Daily';
 
 const DailyPage = () => (
   <Fragment>

@@ -35,6 +35,10 @@ import './src/components/navigation/hamburger.scss';
 import './src/components/navigation/mobileNavigation.scss';
 import './src/components/navigation/desktopNavigation.scss';
 
+import 'react-image-lightbox/style.css';
+import './src/components/daily/daily.scss';
+import './src/components/daily/modal.scss';
+
 import Navigation from "./src/components/navigation/Navigation";
 import ScrollTop from "./src/components/scrollTop/ScrollTop";
 
