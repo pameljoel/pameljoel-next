@@ -10,6 +10,7 @@ import { getData } from '../../helpers';
 import personalJson from '../../../../static/resources/personal.json';
 import educationJson from '../../../../static/resources/education.json';
 import careerJson from '../../../../static/resources/career.json';
+import { useAppContext } from "../../context/appContext";
 
 const StaticHeader = () => {
   return (

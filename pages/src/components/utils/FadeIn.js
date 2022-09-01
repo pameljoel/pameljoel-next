@@ -4,6 +4,7 @@ import React, { useEffect, useRef, useState } from 'react';
 export const FadeIn = (props) => {
   const [visible, setVisible] = useState(false);
   const fadeRef = useRef(null);
+
   const onChange = (entries) => {
     entries.forEach((entry) => {
       const { isIntersecting } = entry;
@@ -14,8 +15,10 @@ export const FadeIn = (props) => {
   useEffect(() => {
     if (!window.IntersectionObserver) return;
     const observer = new IntersectionObserver(onChange);
-    observer.observe(fadeRef.current);
-    return () => observer.unobserve(fadeRef.current);
+    if (fadeRef && fadeRef.current) observer.observe(fadeRef.current);
+    return () => {
+      if (fadeRef && fadeRef.current) observer.unobserve(fadeRef.current);
+    }
   });
 
   const { children, small, delay } = props;

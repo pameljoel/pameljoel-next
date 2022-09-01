@@ -9,6 +9,7 @@ import './src/components/curriculum/education.scss';
 import './src/components/curriculum/field.scss';
 import './src/components/curriculum/school.scss';
 import './src/components/curriculum/section.scss';
+import './src/components/footer/footer.scss';
 
 import './src/components/relatedProjects/relatedProjects.scss';
 
@@ -44,13 +45,18 @@ import './src/components/carousel/slick.scss';
 
 import Navigation from "./src/components/navigation/Navigation";
 import ScrollTop from "./src/components/scrollTop/ScrollTop";
+import Footer from "./src/components/footer/Footer";
+import { AppWrapper } from './src/context/appContext';
 
-function MyApp({ Component, pageProps }) {
-  return <>
-    <Navigation />
-    <ScrollTop />
-    <Component {...pageProps} />
-    </>
+function App({Component, pageProps}) {
+    return (
+        <AppWrapper>
+            <Navigation/>
+            <ScrollTop/>
+            <Component {...pageProps} />
+            <Footer/>
+        </AppWrapper>
+    )
 }
 
-export default MyApp
+export default App;
