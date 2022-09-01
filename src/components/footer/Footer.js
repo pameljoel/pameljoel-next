@@ -29,7 +29,7 @@ const Footer = () => {
           <p className="footer-role">Graphic Designer & FrontEnd Developer</p>
           <div className="social">
             <a
-              href="https://www.linkedin.com/in/pameljoel/"
+              href="src/components/footer/Footer"
               target="_blank"
               name="Linkedin profile"
               rel="noopener noreferrer"

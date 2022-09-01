@@ -3,7 +3,7 @@ import PropTypes from 'prop-types';
 import Link from 'next/link'
 
 const ProjectThumb = ({ project }) => {
-  return <Link href="/projects">
+  return <Link href="/src/pages/projects">
       <a>
           <img
               className="project-image"

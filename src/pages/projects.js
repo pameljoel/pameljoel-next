@@ -1,8 +1,8 @@
 import React, { Fragment } from 'react';
-import SEO from './src/components/seo';
-import Projects from './src/components/projects/Projects';
+import SEO from '../components/seo';
+import Projects from '../components/projects/Projects';
 import { PropTypes } from 'prop-types';
-import {useAppContext} from "./src/context/state";
+import {useAppContext} from "../context/state";
 
 const ProjectsPage = () => {
   const { selectedProject } = useAppContext();

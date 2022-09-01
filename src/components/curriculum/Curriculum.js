@@ -7,9 +7,9 @@ import Career from './Career';
 import Education from './Education';
 
 import { getData } from '../../helpers';
-import personalJson from '../../../../static/resources/personal.json';
-import educationJson from '../../../../static/resources/education.json';
-import careerJson from '../../../../static/resources/career.json';
+import personalJson from '../../../static/resources/personal.json';
+import educationJson from '../../../static/resources/education.json';
+import careerJson from '../../../static/resources/career.json';
 import StaticHeader from "./StaticHeader";
 
 const Content = (props) => {

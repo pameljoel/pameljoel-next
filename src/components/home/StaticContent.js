@@ -38,10 +38,10 @@ const StaticContent = () => {
                 <div className="presentation-tooltip">
                   <div className="image" />
                   <div className="description">
-                    <Link href="/curriculum">
+                    <Link href="/src/pages/curriculum">
                       <a className="name">Pamel Joel Beltrè</a>
                     </Link>
-                    <Link  href="/curriculum">
+                    <Link  href="/src/pages/curriculum">
                       <a className="text">I am a young web developer, you can find me here:</a>
                     </Link>
                     <div className="social">
@@ -50,7 +50,7 @@ const StaticContent = () => {
                         className="linkedin"
                         target="_blank"
                         rel="noopener noreferrer"
-                        href="https://www.linkedin.com/in/pameljoel/"
+                        href="src/components/home/StaticContent"
                       >
                         {linkedInSVG}
                       </a>
@@ -132,7 +132,7 @@ const StaticContent = () => {
 
               <div className="company-description">
                 <div className="company-suffix">as</div>
-                <Link href="/curriculum">
+                <Link href="/src/pages/curriculum">
                   <a className="company-job-title">
                   <span>Front-end Engineer</span>
                   <div>
@@ -148,7 +148,7 @@ const StaticContent = () => {
 
           <Fade big cascade>
             <button className="big-button-secondary">
-              <Link href="/projects">
+              <Link href="/src/pages/projects">
                 <a>See my projects</a>
               </Link>
             </button>

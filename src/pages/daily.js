@@ -1,6 +1,6 @@
 import React, { Fragment } from 'react';
-import SEO from './src/components/seo';
-import Daily from './src/components/daily/Daily';
+import SEO from '../components/seo';
+import Daily from '../components/daily/Daily';
 
 const DailyPage = () => (
   <Fragment>

@@ -3,7 +3,7 @@ import Link from 'next/link'
 
 const Branding = () => {
   return (
-    <Link href="/">
+    <Link href="/src/pages">
         <a className="nav-logo__container">
             <div className="nav-logo">
                 <strong>P</strong>amel <strong>J</strong>oel <strong>B</strong>eltrè{' '}

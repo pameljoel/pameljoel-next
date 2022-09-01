@@ -1,8 +1,8 @@
 import React from 'react';
-import SEO from './src/components/seo';
-import Curriculum from './src/components/curriculum/Curriculum';
+import SEO from '../components/seo';
+import Curriculum from '../components/curriculum/Curriculum';
 import { PropTypes } from 'prop-types';
-import {useAppContext} from "./src/context/state";
+import {useAppContext} from "../context/state";
 
 const CurriculumPage = () => {
 

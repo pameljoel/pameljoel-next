@@ -8,8 +8,8 @@ import { addImagesToMonths, createLightBoxUrl } from './utils';
 import Header from './Header';
 import { getDataAsync } from '../../helpers';
 
-import dailyJson from '../../../../static/resources/daily.json';
-import monthsJson from '../../../../static/resources/months.json';
+import dailyJson from '../../../static/resources/daily.json';
+import monthsJson from '../../../static/resources/months.json';
 
 const Daily = () => {
   const [images, setImages] = useState(null);
