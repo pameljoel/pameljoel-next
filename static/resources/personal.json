@@ -1,57 +1,52 @@
 [
-    {
-        "field": "Name",
-        "icon": "glyphicon-sunglasses",
-        "value": "Pamel Joel",
-        "isLink" : false
-    }, {
-        "field": "Surname",
-        "icon": "glyphicon-user",
-        "value": "Beltrè",
-        "isLink" : false
-    }, {
-        "field": "Born in",
-        "icon": "glyphicon-baby-formula",
-        "value": "Dominican Republic",
-        "isLink" : false
-    }, {
-        "field": "Citizenship",
-        "icon": "glyphicon-sunglasses",
-        "value": "Italian (EU)",
-        "isLink" : false
-    }, {
-        "field": "Date of birth",
-        "icon": "glyphicon-heart",
-        "value": "23 / 08 / 1986",
-        "isLink" : false
-    }, {
-        "field": "I live in",
-        "icon": "glyphicon-map-marker",
-        "value": "Bologna",
-        "isLink" : false
-    }, {
-        "field": "email",
-        "icon": "glyphicon-envelope",
-        "value": "window.$crisp.push(['do', 'chat:open'])",
-        "linkType" : "email",
-        "isLink" : true
-    }, {
-        "field": "Linkedin",
-        "icon": "glyphicon-globe",
-        "value": "https://www.linkedin.com/in/pamel-joel-beltr%C3%A8-01a6474/",
-        "linkType" : "href",
-        "isLink" : true
-    }, {
-        "field": "Skype",
-        "icon": "glyphicon-globe",
-        "value": "skype:pjjjjk?chat",
-        "linkType" : "href",
-        "isLink" : true
-    }, {
-        "field": "Behance",
-        "icon": "glyphicon-globe",
-        "value": "http://www.behance.net/pameljoel",
-        "linkType" : "href",
-        "isLink" : true
-    }
+  {
+    "field": "Name",
+    "icon": "glyphicon-sunglasses",
+    "value": "Pamel Joel",
+    "isLink": false
+  },
+  {
+    "field": "Surname",
+    "icon": "glyphicon-user",
+    "value": "Beltrè",
+    "isLink": false
+  },
+  {
+    "field": "Born in",
+    "icon": "glyphicon-baby-formula",
+    "value": "Dominican Republic",
+    "isLink": false
+  },
+  {
+    "field": "Citizenship",
+    "icon": "glyphicon-sunglasses",
+    "value": "Italian (EU)",
+    "isLink": false
+  },
+  {
+    "field": "Date of birth",
+    "icon": "glyphicon-heart",
+    "value": "23 / 08 / 1986",
+    "isLink": false
+  },
+  {
+    "field": "I live in",
+    "icon": "glyphicon-map-marker",
+    "value": "Bologna",
+    "isLink": false
+  },
+  {
+    "field": "email",
+    "icon": "glyphicon-envelope",
+    "value": "window.$crisp.push(['do', 'chat:open'])",
+    "linkType": "email",
+    "isLink": true
+  },
+  {
+    "field": "Linkedin",
+    "icon": "glyphicon-globe",
+    "value": "https://www.linkedin.com/in/pamel-joel-beltr%C3%A8-01a6474/",
+    "linkType": "href",
+    "isLink": true
+  }
 ]

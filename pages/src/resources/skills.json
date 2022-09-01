@@ -86,14 +86,14 @@
   },
   {
     "name":"JavaScript",
-    "percentage":85,
+    "percentage":90,
     "startDate": 2014,
     "description":"My programming language of choice, I love JS, you can easily find me in conventions near Bologna.",
     "hint":""
   },
   {
     "name":"React",
-    "percentage":85,
+    "percentage":90,
     "startDate": 2017,
     "description":"My library of choice for building user interfaces",
     "hint":""
