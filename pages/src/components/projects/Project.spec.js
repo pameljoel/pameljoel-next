@@ -2,7 +2,7 @@ import React from 'react';
 import { shallow } from 'enzyme';
 import Project from './Project';
 
-import projectsStub from '../../../static/resources/projects.json';
+import projectsStub from '../../resources/projects.json';
 
 const project = projectsStub[2];
 
