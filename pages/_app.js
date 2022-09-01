@@ -46,7 +46,7 @@ import './src/components/carousel/slick.scss';
 import Navigation from "./src/components/navigation/Navigation";
 import ScrollTop from "./src/components/scrollTop/ScrollTop";
 import Footer from "./src/components/footer/Footer";
-import { AppWrapper } from './src/context/appContext';
+import { AppWrapper } from './src/context/state';
 
 function App({Component, pageProps}) {
     return (

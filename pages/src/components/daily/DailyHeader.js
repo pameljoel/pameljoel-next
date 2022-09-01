@@ -30,7 +30,7 @@ const DailyHeader = () => {
 
       <div className="daily-header-callout">
         <div className="daily-header-callout-title">THESE ARE THE RULES*</div>
-        <div className="daily-header-callout-subtitle">Let's get started</div>
+        <div className="daily-header-callout-subtitle">Let&apos;s get started</div>
 
         {callout.map((item, i) => (
           <div

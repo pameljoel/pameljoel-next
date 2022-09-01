@@ -1,6 +1,6 @@
 import React, { Fragment, useEffect } from 'react';
 import { enableCrisp } from '../crisp/Crisp';
-import isBreakpoint from '../utils/isBreakpoint';
+import useBreakpoint from '../utils/useBreakpoint';
 
 import MobileNavigation from './MobileNavigation';
 import DesktopNavigation from './DesktopNavigation';
@@ -12,7 +12,7 @@ const Navigation = () => {
   });
 
   const HandleNavigation = () => {
-    return isBreakpoint() ? <MobileNavigation /> : <DesktopNavigation />;
+    return useBreakpoint() ? <MobileNavigation /> : <DesktopNavigation />;
   };
 
   return (

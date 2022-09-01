@@ -1,8 +1,8 @@
-import React, { Fragment } from 'react';
+import React from 'react';
 import SEO from './src/components/seo';
 import Curriculum from './src/components/curriculum/Curriculum';
 import { PropTypes } from 'prop-types';
-import {useAppContext} from "./src/context/appContext";
+import {useAppContext} from "./src/context/state";
 
 const CurriculumPage = () => {
 

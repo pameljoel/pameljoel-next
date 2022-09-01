@@ -82,7 +82,7 @@ const StaticContent = () => {
           <Fade big cascade>
             <div className="job">
               <div className="job-suffix">
-                <span>I'am a</span>
+                <span>I&apos;am a</span>
               </div>
               <div className="job-title">
                 <TextLoop

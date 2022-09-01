@@ -1,7 +1,7 @@
 import React from 'react';
 import { PieChart } from 'react-minimal-pie-chart';
 import { randomDelay, skillLevel } from '../utils';
-import isBreakpoint from '../../utils/isBreakpoint';
+import useBreakpoint from '../../utils/useBreakpoint';
 import { breakpoints } from '../../utils/breakpoints';
 import { ProgressBar } from './ProgressBar';
 
@@ -9,7 +9,7 @@ type GraphProps = { percentage: number; chartData: any[] };
 type Props = { percentage: number; color?: string };
 
 const SelectGraphType = ({ percentage, chartData }: GraphProps) => {
-  return isBreakpoint(breakpoints.xs) ? (
+  return useBreakpoint(breakpoints.xs) ? (
     <ProgressBar percentage={percentage} delay={randomDelay()} />
   ) : (
     <PieChart

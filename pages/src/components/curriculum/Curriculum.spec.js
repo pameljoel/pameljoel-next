@@ -1,9 +1,10 @@
 import React from 'react';
-import ReactDOM from 'react-dom';;
-
-import Curriculum from './Curriculum';
+import Curriculum from "./Curriculum";
 
 it('renders without crashing', () => {
-  const div = document.createElement('div');
-  ReactDOM.render(<Curriculum />, div);
+  const emptyFunction = jest.fn();
+  const wrapper = shallow(<Curriculum setSelectedProject={emptyFunction} />);
+
+  expect(wrapper.length).toBe(1);
 });
+

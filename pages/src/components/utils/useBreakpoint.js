@@ -7,7 +7,7 @@ const isLessThanBreakpoint = (breakpoint) => {
   return window.innerWidth < breakpoint;
 };
 
-const isBreakpoint = (breakpoint = defaultBreakpoint) => {
+const useBreakpoint = (breakpoint = defaultBreakpoint) => {
   const [isMobile, setIsMobile] = useState(true);
 
   const check = () => {
@@ -27,4 +27,4 @@ const isBreakpoint = (breakpoint = defaultBreakpoint) => {
   return isMobile;
 };
 
-export default isBreakpoint;
+export default useBreakpoint;

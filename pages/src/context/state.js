@@ -1,6 +1,6 @@
 import React, {createContext, useContext, useState} from 'react';
 
-const AppContext = createContext(null);
+const State = createContext(null);
 
 export function AppWrapper({ children }) {
     const [selectedProject, setSelectedProject] = useState(null);
@@ -16,12 +16,12 @@ export function AppWrapper({ children }) {
     };
 
     return (
-        <AppContext.Provider value={sharedState}>
+        <State.Provider value={sharedState}>
             {children}
-        </AppContext.Provider>
+        </State.Provider>
     );
 }
 
 export function useAppContext() {
-    return useContext(AppContext);
+    return useContext(State);
 }
