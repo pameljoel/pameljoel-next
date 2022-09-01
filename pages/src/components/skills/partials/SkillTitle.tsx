@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import YearsOfExperience from './YearsOfExperience.tsx';
+import YearsOfExperience from './YearsOfExperience';
 
 type SkillTitleProps = {
   name: string;

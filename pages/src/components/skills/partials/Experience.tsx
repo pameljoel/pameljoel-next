@@ -1,5 +1,5 @@
 import React from 'react';
-import { getYearsOfExperience } from '../utils.ts';
+import { getYearsOfExperience } from '../utils';
 
 type Props = {
   startDate: number;

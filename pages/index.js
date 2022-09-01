@@ -1,5 +1,5 @@
 import React from 'react';
-import Home from './src/components/home/Home.tsx';
+import Home from './src/components/home/Home';
 import SEO from './src/components/seo';
 
 const IndexPage = () => (

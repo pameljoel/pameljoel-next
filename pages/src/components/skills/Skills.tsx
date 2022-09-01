@@ -1,8 +1,8 @@
 import React from 'react';
-import Skill from './Skill.tsx';
+import Skill from './Skill';
 import { SkillType, SkillsType, SkillsList } from '../../types';
 import skillsJson from '../../resources/skills.json';
-import { filterSkills } from '../utils/skills.ts';
+import { filterSkills } from '../utils/skills';
 // import './skills.scss';
 import { FadeIn } from '../utils/FadeIn';
 

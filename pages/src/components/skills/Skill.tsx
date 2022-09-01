@@ -1,8 +1,8 @@
 import React, { useState } from 'react';
 // import 'react-tippy/dist/tippy.css';
 import { SkillType } from '../../types';
-import Graph from './partials/Graph.tsx';
-import SkillText from './partials/SkillText.tsx';
+import Graph from './partials/Graph';
+import SkillText from './partials/SkillText';
 
 type Props = {
   name: string;

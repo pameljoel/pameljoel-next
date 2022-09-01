@@ -1,6 +1,6 @@
-import SkillTitle from './SkillTitle.tsx';
-import SkillDescription from './SkillDescription.tsx';
-import AdditionalInfo from './AdditionalInfo.tsx';
+import SkillTitle from './SkillTitle';
+import SkillDescription from './SkillDescription';
+import AdditionalInfo from './AdditionalInfo';
 import React from 'react';
 
 type Props = {
