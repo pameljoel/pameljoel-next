@@ -1,4 +1,4 @@
-import Skills from '../skills/Skills.tsx';
+import Skills from '../skills/Skills';
 import React from 'react';
 import { SectionType } from '../../types';
 import { FadeIn } from '../utils/FadeIn';

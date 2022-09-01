@@ -3,6 +3,7 @@ type ExperienceName = {
 };
 
 type ExperienceTooltip = {
+  name?: string;
   startDate: number;
   endDate?: number;
 };
@@ -43,14 +44,9 @@ export const generateExperienceClassName = ({
   return formatExperienceClassName(years);
 };
 
-export const formatExperienceTooltip = ({
-  startDate,
-  endDate,
-}: ExperienceTooltip) => {
+export const formatExperienceTooltip = ({ name, startDate, endDate }: ExperienceTooltip) => {
   const base = `I have been working with <strong>${name}</strong>`;
-  return endDate
-    ? base + ` from ${startDate} to ${endDate}`
-    : base + ` since ${startDate}`;
+  return endDate ? base + ` from ${startDate} to ${endDate}` : base + ` since ${startDate}`;
 };
 
 export const skillLevel = (percentage: number) => {

@@ -1,7 +1,7 @@
 import React from 'react';
 import { Tooltip } from 'react-tippy';
-import { generateExperienceClassName, formatExperienceTooltip } from '../utils.ts';
-import Experience from './Experience.tsx';
+import { generateExperienceClassName, formatExperienceTooltip } from '../utils';
+import Experience from './Experience';
 
 type Props = {
   startDate: number;
@@ -24,7 +24,7 @@ const YearsOfExperience: React.FC<Props> = ({
     >
       <Tooltip
         className="tag__tooltip"
-        title={formatExperienceTooltip({ startDate, endDate })}
+        title={formatExperienceTooltip({ startDate, endDate, name: tooltipName })}
         position="top"
         trigger="mouseenter"
         data-test={`tooltip-${tooltipName}`}
