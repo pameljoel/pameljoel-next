@@ -25,7 +25,7 @@ const DailyHeader = () => {
         For a period of a year I will make <strong>one sketch a day</strong>,
         each sketch takes around 30 minutes. <br />
         The works in this page are quick sketches, if you want to see my work
-        projects head over to <Link href="/src/pages/projects"><a>projects</a></Link> <br />
+        projects head over to <Link href="/projects"><a>projects</a></Link> <br />
       </div>
 
       <div className="daily-header-callout">
