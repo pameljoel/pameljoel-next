@@ -6,17 +6,13 @@ import Loading from '../status/Loading';
 import Months from './Months';
 import { addImagesToMonths, createLightBoxUrl } from './utils';
 import Header from './Header';
-import { getDataAsync } from '../../helpers';
 
-import dailyJson from '../../../public/resources/daily.json';
-import monthsJson from '../../../public/resources/months.json';
-
-const Daily = () => {
-  const [images, setImages] = useState(null);
-  const [months, setMonths] = useState([]);
+const Daily = ({ daily, months: monthsDefault }) => {
+  const images = daily;
+  const months = addImagesToMonths(monthsDefault, images);
   const [isLightBoxOpen, setIsLightBoxOpen] = useState(false);
   const [lightBoxUrl, setLightBoxUrl] = useState(null);
-  const [isLoading, setIsLoading] = useState(true);
+  const isLoading = (!images || images.length === 0) && (!months || months.length === 0);
   const [day, setDay] = useState(0);
 
   const openLightBox = () => {
@@ -27,19 +23,8 @@ const Daily = () => {
     setIsLightBoxOpen(false);
   };
 
-  async function getData() {
-    const imagesData = await getDataAsync(dailyJson);
-    setImages(imagesData);
-
-    const monthsData = await getDataAsync(monthsJson);
-    setMonths(addImagesToMonths(monthsData, images));
-
-    setIsLoading(false);
-  }
-
   useEffect(() => {
     enableCrisp();
-    getData().catch((error) => console.log(error));
   }, [images, months]);
 
   const prevDay = day - 1;
