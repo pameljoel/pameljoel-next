@@ -4,6 +4,16 @@
 .desktop-navigation {
   @include clearfix;
 
+  .nav-logo {
+    strong {
+      display: none;
+
+      @media (min-width: 1024px) {
+        display: inline;
+      }
+    }
+  }
+
   .main-navigation-links {
     float: right;
     height: 50px;
