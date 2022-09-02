@@ -25,6 +25,7 @@ import '../components/buttons/closeButton.scss';
 import '../components/card.scss'
 
 import '../components/crisp/crisp.scss';
+import 'react-tippy/dist/tippy.css';
 
 import '../components/skills/skills.scss'
 import '../components/skills/partials/additionalInfo.scss'
