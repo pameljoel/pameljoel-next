@@ -5,7 +5,7 @@ import Tags from '../tags/Tags';
 import RelatedProjects from '../relatedProjects/RelatedProjects';
 
 import { getData } from '../../helpers';
-import projectsJSON from '../../../static/resources/projects.json';
+import projectsJSON from '../../../public/resources/projects.json';
 
 const Company = (props) => {
   const [projects, setProjects] = useState([]);
