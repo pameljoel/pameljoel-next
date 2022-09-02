@@ -1,11 +1,13 @@
-import React, { useState, useEffect } from 'react';
+import React from "react";
 import Loading from '../status/Loading';
 import ErrorBoundary from '../status/ErrorBoundary';
 import StaticContent from './StaticContent';
-import categoriesJson from '../../resources/categories.json';
-import { getData } from '../../helpers';
 import { SectionsType } from '../../types';
 import Section from './Section';
+
+type Props = {
+  sections: SectionsType;
+}
 
 const createSections = (sections: SectionsType) => {
   if (!sections) return null;
@@ -23,21 +25,8 @@ const createSections = (sections: SectionsType) => {
   });
 };
 
-const Home: React.FC = () => {
-  const [sections, setSections] = useState(null);
-  const [isLoading, setIsLoading] = useState(true);
-
-  useEffect(() => {
-    getData(categoriesJson)
-      .then((data) => {
-        setSections(data);
-        setIsLoading(false);
-      })
-      .catch((error) => {
-        setIsLoading(false);
-        console.error(error);
-      });
-  }, []);
+const Home: React.FC<Props> = ({ sections }) => {
+  const isLoading = sections.length === 0;
 
   return (
     <div data-test="home">
