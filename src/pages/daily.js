@@ -5,7 +5,7 @@ import { server } from "../helpers";
 
 const DailyPage = ({ daily, months }) => (
   <Fragment>
-    <SEO title="Pamel Joel Beltrè - Front End Designer - React, AngularJS, Webpack" />
+    <SEO title="Daily doodles - Pamel Joel Beltrè - Front End Developer & Designer - React, AngularJS, Webpack" />
     <Daily { ...{ daily, months } } />
   </Fragment>
 );

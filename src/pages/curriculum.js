@@ -9,7 +9,7 @@ const CurriculumPage = ({ personal, education, career }) => {
     const { setSelectedProject } = useAppContext();
     return (
         <>
-            <SEO title="Pamel Joel Beltrè - Front End Designer - React, AngularJS, Webpack"/>
+            <SEO title="CV - Pamel Joel Beltrè - Front End Developer & Designer - React, AngularJS, Webpack"/>
             <Curriculum  {...{ personal, education, career, setSelectedProject }} />
         </>
     );
