@@ -30,6 +30,9 @@ import '../components/curriculum/section.scss';
 // projects page
 import '../components/projects/projects.scss';
 
+// Side projects page
+import '../components/SideProjects/sideProjects.scss';
+
 // navigation
 import '../components/navigation/navigation.scss';
 import '../components/navigation/hamburger.scss';
