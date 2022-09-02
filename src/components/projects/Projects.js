@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import React, { useEffect } from 'react';
 import PropTypes from 'prop-types';
 import Slider from 'react-slick';
 
@@ -6,26 +6,11 @@ import Loading from '../status/Loading';
 import { enableCrisp } from '../crisp/Crisp';
 import Project from './Project';
 
-import { getDataAsync } from '../../helpers';
-import projectJson from '../../../public/resources/projects.json';
-
-const Projects = (props) => {
-  const { selectedProject } = props;
-  const [projects, setProjects] = useState(null);
-  const [isLoading, setIsLoading] = useState(true);
-
-  async function getData() {
-    const projectsData = await getDataAsync(projectJson);
-    setProjects(projectsData);
-    setIsLoading(false);
-  }
+const Projects = ({ selectedProject, projects }) => {
+  const isLoading = !projects || projects.length === 0;
 
   useEffect(() => {
     enableCrisp();
-    getData().catch((error) => {
-      setIsLoading(false);
-      console.error(error);
-    });
   });
 
   const settings = {
@@ -37,6 +22,7 @@ const Projects = (props) => {
     adaptiveHeight: true,
     initialSlide: selectedProject || 0,
   };
+
   return (
     <div>
       <header
