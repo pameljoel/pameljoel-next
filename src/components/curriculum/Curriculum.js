@@ -1,19 +1,13 @@
-import React, { useState, useEffect } from 'react';
+import React from 'react';
 import Loading from '../status/Loading';
 import { PropTypes } from 'prop-types';
 
 import Section from './Section';
 import Career from './Career';
 import Education from './Education';
-
-import { getData } from '../../helpers';
-import personalJson from '../../../public/resources/personal.json';
-import educationJson from '../../../public/resources/education.json';
-import careerJson from '../../../public/resources/career.json';
 import StaticHeader from "./StaticHeader";
 
-const Content = (props) => {
-  const { isLoading, personal, career, education, setSelectedProject } = props;
+const Content = ({ isLoading, personal, career, education, setSelectedProject }) => {
   return (
     <div className="container">
       {!isLoading && (personal || career || education) ? (
@@ -29,43 +23,8 @@ const Content = (props) => {
   );
 };
 
-const Curriculum = ({ setSelectedProject }) => {
-  const [personal, setPersonal] = useState(null);
-  const [education, setEducation] = useState(null);
-  const [career, setCareer] = useState(null);
-  const [isLoading, setLoading] = useState(true);
-
-  const logError = (error) => {
-    this.setState({ isLoading: false });
-    console.error(error);
-  };
-
-  useEffect(() => {
-    getData(personalJson)
-      .then((data) => {
-        setPersonal(data);
-        setLoading(false);
-      })
-      .catch((error) => logError(error));
-  }, [personal]);
-
-  useEffect(() => {
-    getData(educationJson)
-      .then((data) => {
-        setEducation(data);
-        setLoading(false);
-      })
-      .catch((error) => logError(error));
-  }, [education]);
-
-  useEffect(() => {
-    getData(careerJson)
-      .then((data) => {
-        setCareer(data);
-        setLoading(false);
-      })
-      .catch((error) => logError(error));
-  }, [career]);
+const Curriculum = ({ personal, education, career, setSelectedProject }) => {
+  const isLoading = !personal && !education && !career;
 
   return (
     <div>
