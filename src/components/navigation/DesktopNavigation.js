@@ -18,7 +18,7 @@ const DesktopNavigation = () => {
             </ul>
             <ul className="main-navigation-links">
                 <li>
-                    <Link href="/src/pages">
+                    <Link href="/">
                         <a className={router.asPath == "/" ? "active" : ""}>
                             <div className="nav-link">Home</div>
                             <div className="active-bar"/>
@@ -26,7 +26,7 @@ const DesktopNavigation = () => {
                     </Link>
                 </li>
                 <li>
-                    <Link href="/src/pages/daily">
+                    <Link href="/daily">
                         <a className={router.asPath == "/daily" ? "active" : ""}>
                             <div className="nav-link">Daily</div>
                             <div className="active-bar"/>
@@ -34,7 +34,7 @@ const DesktopNavigation = () => {
                     </Link>
                 </li>
                 <li>
-                    <Link href="/src/pages/curriculum">
+                    <Link href="/curriculum">
                         <a className={router.asPath == "/curriculum" ? "active" : ""}>
                             <div className="nav-link">CV</div>
                             <div className="active-bar"/>
@@ -42,7 +42,7 @@ const DesktopNavigation = () => {
                     </Link>
                 </li>
                 <li>
-                    <Link href="/src/pages/projects">
+                    <Link href="/projects">
                         <a className={router.asPath == "/projects" ? "active" : ""}>
                             <div className="nav-link">Projects</div>
                             <div className="active-bar"/>
