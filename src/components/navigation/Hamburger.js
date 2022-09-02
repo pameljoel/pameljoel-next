@@ -7,7 +7,7 @@ const Hamburger = ({ open, callback }) => {
       role="button"
       aria-label="open sidebar"
       tabIndex="0"
-      className={`hamburger ${open ? 'open' : ''}`}
+      className={`hamburger ${open ? 'open' : 'closed'}`}
       onClick={callback}
       onKeyPress={callback}
     >

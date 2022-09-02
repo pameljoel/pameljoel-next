@@ -53,6 +53,14 @@
         @media (max-width: 559px){
             top: 7px;
         }
+
+        &.closed {
+            @media (max-width: 559px){
+                top: 50%;
+                transform: translateY(-50%);
+            }
+        }
+
         &:focus, &:active {
             .hamburger-box .hamburger-inner, 
             .hamburger-box:before, 
@@ -67,6 +75,9 @@
         width: 100%;
         padding-right: 70px;
         transition: background-color .3s ease-in-out;
+        display: flex;
+        align-items: center;
+
         &:before {
             content: "";
             float: left;
@@ -80,6 +91,8 @@
             background-size: 80%;
             background-position: center;
             background-repeat: no-repeat;
+            flex-shrink: 0;
+
             @media (max-width: 559px){
                 width: 44px;
                 height: 44px;
@@ -104,8 +117,10 @@
                 }
             }
 
-            strong {
-                display: none;
+            @media (max-width: 500px) {
+                strong {
+                    display: none;
+                }
             }
         }
     }
