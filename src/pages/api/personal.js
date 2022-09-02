@@ -1,4 +1,4 @@
-import json from '../../../public/resources/categories.json';
+import json from '../../../public/resources/education.json';
 
 export default (req, res) => {
   res.statusCode = 200;
