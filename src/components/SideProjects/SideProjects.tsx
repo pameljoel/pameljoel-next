@@ -58,15 +58,15 @@ const sideProjects = [
     description: 'lorem ipsum dolor sit amet',
     image: 'bubble-sort',
     github: '',
-    tags: ['React', 'Next.JS', 'Firebase', 'SCSS']
+    tags: ['React', 'Javascript', 'SCSS']
   },
   {
     link: 'https://elated-wright-749fe7.netlify.app/',
     name: 'Animal videos',
-    description: 'A youtube API experiment done as a fame for my daughter, click on an animal to see a random video of it',
+    description: 'A youtube API experiment done as a game for my daughter, click on an animal to see a random video of it',
     image: 'animals',
     github: '',
-    tags: ['React', 'Next.JS', 'Firebase', 'SCSS']
+    tags: ['React', 'Youtube API', 'Javascript', 'SCSS']
   }
 ]
 
